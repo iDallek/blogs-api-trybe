@@ -1,8 +1,8 @@
 const { Op } = require('sequelize');
 
-const { BlogPost } = require('../models');
-const { User } = require('../models');
-const { Category } = require('../models');
+const { BlogPost } = require('../../database/models');
+const { User } = require('../../database/models');
+const { Category } = require('../../database/models');
 
 const err = require('../helpers/errors');
 
