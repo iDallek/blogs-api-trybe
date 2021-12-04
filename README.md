@@ -53,89 +53,31 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-<style>
-  @font-face {
-    font-family: 'JetBrains Mono';
-    src: url('./public/fonts/JetBrainsMono-Medium.woff2')
-  }
-
-  .endpoint {
-    display: inline-block;
-    font-family: 'JetBrains Mono';
-    background-color: #2D333B;
-    border-radius: 2px;
-    width: 66px;
-    text-align: center;
-  }
-
-  .endpoint:hover {
-    animation: 1s shake linear alternate;
-  }
-
-  @keyframes shake {
-  0% { transform: skewX(-15deg); }
-  5% { transform: skewX(15deg); }
-  10% { transform: skewX(-15deg); }
-  15% { transform: skewX(15deg); }
-  20% { transform: skewX(0deg); }
-  100% { transform: skewX(0deg); }  
-}
-
-  .get {
-    color: #94D7BE;
-  }
-
-  .post {
-    color: #59ABFD;
-  }
-
-  .put {
-    color: #A8AEBC;
-  }
-
-  .delete {
-    color: #FD8883;
-  }
-
-  .url {
-    display: inline-block;
-    font-family: 'JetBrains Mono';
-    border-radius: 2px;
-    background-color: #2D333B;
-    color: #F0F1F4;
-    font-size: 0.7em;
-    padding: 1.7px 3px;
-    width: 101px;
-  }
-
-</style>
-
 API was created as the REST pattern. This is a short summary, for more details go to the [documentation]().
 
 * Endpoints `login`
-
-  - <span class="endpoint post">POST</span> <span class="url">/login</span> Login user
-
+  - **POST** `/login` Login user
+  
 * Endpoints `user`
 
-  - <span class="endpoint get">GET</span> <span class="url">/user</span> Return list with registered users 
-  - <span class="endpoint get">GET</span> <span class="url">/user/:id</span> Returns a user with the specified id 
-  - <span class="endpoint post">POST</span> <span class="url">/user</span> Register user
-  - <span class="endpoint delete">DELETE</span> <span class="url">/user/me</span> Allows user to delete their account 
+  - **GET** `/user` Return list with registered users 
+  - **GET** `/user/:id` Returns a user with the specified id 
+  - **POST** `/user` Register user
+  - **DELETE** `/user/me` Allows user to delete their account 
 
 * Endpoints `categories`
-  - <span class="endpoint get">GET</span> <span class="url">/categories</span> Return all categories registered 
-  - <span class="endpoint post">POST</span> <span class="url">/categories</span> Create a new category 
+  - **GET** `/categories` Return all categories registered 
+  - **POST** `/categories` Create a new category 
 
 
 * Endpoints `post`
 
-  - <span class="endpoint get">GET</span> <span class="url">/post</span> Return all posts 
-  - <span class="endpoint get">GET</span> <span class="url">/post/:id</span> Returns specific post
-  - <span class="endpoint get">GET</span> <span class="url">/post/search?q=</span> Returns post according to search term
-  - <span class="endpoint post">POST</span> <span class="url">/post</span> Create a new post
-  - <span class="endpoint put">PUT</span> <span class="url">/post/:id</span> Update a post 
-  - <span class="endpoint delete">DELETE</span> <span class="url">/post/:id</span> Delete a post 
+  - **GET** `/post` Return all posts 
+  - **GET** `/post/:id` Returns specific post
+  - **GET** `/post/search?q=` Returns post according to search term
+  - **POST** `/post` Create a new post
+  - **PUT** `/post/:id` Update a post 
+  - **DELETE** `/post/:id` Delete a post 
 
 ## How To Use
 
